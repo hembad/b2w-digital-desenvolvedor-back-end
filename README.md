@@ -22,11 +22,11 @@ Para cada planeta também devemos ter a quantidade de aparições em filmes, que
 May the force be with you!
 
 # Technologia utilizadas:
-nodejs 
-MongoDB
-express
-swagger
-babel-node
+- nodejs 
+- MongoDB
+- express
+- swagger
+- babel-node
 
 # Para execucao do projeto:
 # Install dependencies:
@@ -37,9 +37,9 @@ $ npm start
 
 
 # Access the app:
-http://localhost:3000/api/v1/planet
-http://localhost:3000/api-docs/
+- http://localhost:3000/api/v1/planet
+- http://localhost:3000/api-docs/
 
 # Access the star wars API:
-https://swapi.co/api/films/1/
+- https://swapi.co/api/films/1/
 
