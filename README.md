@@ -27,6 +27,12 @@ May the force be with you!
 - express
 - swagger
 - babel-node
+- body-parser
+- chai
+- jsonwebtoken
+- mongoose
+- nodemon
+- sinon
 
 # Para execucao do projeto:
 # Install dependencies:
@@ -34,7 +40,6 @@ $ npm install
 
 # Start the server:
 $ npm start
-
 
 # Access the app:
 - http://localhost:3000/api/v1/planet
