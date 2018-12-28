@@ -10,14 +10,14 @@ Terreno
 Para cada planeta também devemos ter a quantidade de aparições em filmes, que podem ser obtidas pela API pública do Star Wars: https://swapi.co/
 # Funcionalidades desejadas:
 
-Adicionar um planeta (com nome, clima e terreno)
-Listar planetas
-Buscar por nome
-Buscar por ID
-Remover planeta
-Linguagens que usamos: Java, Go, Clojure, Node, Python
-Bancos que usamos: MongoDB, Cassandra, DynamoDB, Datomic
-E lembre-se! Um bom software é um software bem testado.
+- Adicionar um planeta (com nome, clima e terreno)
+- Listar planetas
+- Buscar por nome
+- Buscar por ID
+- Remover planeta
+- Linguagens que usamos: Java, Go, Clojure, Node, Python
+- Bancos que usamos: MongoDB, Cassandra, DynamoDB, Datomic
+- E lembre-se! Um bom software é um software bem testado.
 
 May the force be with you!
 
