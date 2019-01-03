@@ -2,7 +2,7 @@
   "swagger": "2.0",
   "info": {
     "description": "Star wars planets API",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "title": "Star wars planets",
     "contact": {
       "email": "appchto@gmail.com"
@@ -17,8 +17,7 @@
     }
   ],
   "schemes": [
-    "http",
-    "https"
+    "http"
   ],
   "paths": {
     "/planet": {
@@ -245,18 +244,89 @@
           }
         }
       }
-    }
+    },
+    "/planet/{name}": {
+      "get": {
+        "tags": [
+          "PLANETS"
+        ],
+        "summary": "gets planets info by Name",
+        "description": "By passing in the appropriate options, you can search for\navailable planet in the system\n",
+        "operationId": "getPlanetWithName",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "name",
+            "description": "pass an name for looking up planet",
+            "required": true,
+            "type": "string",
+            "in": "path"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "maximum number of records to return",
+            "required": false,
+            "type": "integer",
+            "maximum": 50,
+            "minimum": 0,
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Planets"
+              }
+            }
+          },
+          "400": {
+            "description": "bad input parameter"
+          },
+          "default": {
+            "Error": "Error",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          }
+        }
+      },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Planets"
+              }
+            }
+          },
+          "400": {
+            "description": "bad input parameter"
+          },
+          "default": {
+            "Error": "Error",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          }
+        }
+      }
   },
   "definitions": {
     "Planets": {
       "type": "object",
       "required": [
-        "name",
+        "Name",
         "Climate",
         "Terrain"
       ],
       "properties": {
-     
         "Name": {
           "type": "string",
           "example": "Name"
@@ -270,10 +340,10 @@
           "example": "Terrain"
         },
         "Film": {
-          "type": "integer",
+          "type": "string",
           "example": 0
         },
-        "created_date": {
+        "Created_date": {
           "type": "string",
           "format": "date-time",
           "example": "2018-12-28T09:12:33.001Z"

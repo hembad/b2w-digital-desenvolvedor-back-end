@@ -5,8 +5,9 @@
   "scripts": {
     "test": "mocha",
     "start": "nodemon ./index.js --exec babel-node -e js"
+
   },
-  "author": "Emmanuel Henri",
+  "author": "Jose barbosa",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.17.2",
@@ -17,6 +18,7 @@
     "mongodb": "^3.1.10",
     "mongodb-stitch-browser-sdk": "^4.1.1",
     "mongoose": "^4.11.10",
+    "node-fetch": "^2.3.0",
     "nodemon": "^1.18.9",
     "request": "^2.88.0",
     "sinon": "^7.2.2",

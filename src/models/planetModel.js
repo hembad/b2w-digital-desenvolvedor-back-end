@@ -13,7 +13,7 @@ export const PlanetSchema = new Schema({
         type: String
     },
     Film: {
-        type: Number
+        type: String
     },
     Created_date: {
         type: Date,

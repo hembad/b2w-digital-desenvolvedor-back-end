@@ -3,7 +3,8 @@ import {
     getPlanets, 
     getPlanetWithID, 
     updatePlanet,
-    deletePlanet 
+    deletePlanet ,
+    getPlanetWithName
 } from '../controllers/planetController';
 
 const routes = (app) => {
@@ -15,7 +16,6 @@ const routes = (app) => {
         console.log(`Request type: ${req.method}`)
         next();
     }, getPlanets)
-    
     // POST endpoint
     .post(addNewPlanet);
 
@@ -28,6 +28,10 @@ const routes = (app) => {
 
     // delete request
     .delete(deletePlanet);
+
+    app.route('/api/v1/planet/:name')
+    .get(getPlanetWithName);
+
 
 }
 

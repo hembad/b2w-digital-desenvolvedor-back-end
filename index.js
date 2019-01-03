@@ -9,9 +9,9 @@ const PORT = 3000;
 
 // mongoose connection
 mongoose.Promise = global.Promise;
-// var dbmlabUrl = 'mongodb://appchto:Password!1@ds237574.mlab.com:37574/node'
+var dbmlabUrl = 'mongodb://appchto:Password!1@ds237574.mlab.com:37574/node'
 // var dbmlabUrl = 'mongodb://nodeUser:nodePassword!1@cluster0-shard-00-02-yoh15.azure.mongodb.net:27017/node'
-  var dbmlabUrl = 'mongodb://localhost:27017/node';
+//   var dbmlabUrl = 'mongodb://localhost:27017/node';
 
 mongoose.connect(dbmlabUrl
     , {useMongoClient: true}
@@ -34,7 +34,6 @@ app.use(bodyParser.urlencoded());
 var swaggerUi = require('swagger-ui-express'),
 swaggerDocument = require('./swagger/swagger.json');
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
-// app.use('/api/v1', routes);
 
 //implement router
 routes(app);

@@ -34,7 +34,7 @@ $ npm install
 
 # Start the server:
 $ npm start
-
+npm i node-fetch
 
 # Access the app:
 - http://localhost:3000/api/v1/planet
