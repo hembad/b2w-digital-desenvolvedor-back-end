@@ -27,6 +27,12 @@ May the force be with you!
 - express
 - swagger
 - babel-node
+- body-parser
+- chai
+- jsonwebtoken
+- mongoose
+- nodemon
+- sinon
 
 # Para execucao do projeto:
 # Install dependencies:
